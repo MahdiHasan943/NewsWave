@@ -1,0 +1,45 @@
+/* font-family: 'Foldit', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+body{
+    margin: 0;
+    padding: 0;
+    box-shadow: borderbox;
+}
+.News{
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+background-color: #5D5FEF;
+color: white;
+
+}
+.Wave{
+    font-family: 'Playfair Display';
+
+    color:#5D5FEF;
+}
+.pr{
+    width: 50px;
+    height: 50px;
+}
+.nav-container{
+    padding: 10px;
+    border-bottom: 0.8px solid #CDCDCD;
+}
+.navText{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #858585;
+}
