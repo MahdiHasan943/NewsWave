@@ -26,6 +26,8 @@ const loadCategorisItems = async (category) => {
     .catch((error) => console.log(error));
 };
 const displayCategoriesItems = (categoriesItems) => {
+
+
   const newsItemsDiv = document.getElementById("newsItems");
   newsItemsDiv.innerHTML = "";
   const itemFound = document.getElementById("item-found");
@@ -42,8 +44,14 @@ const displayCategoriesItems = (categoriesItems) => {
         `;
   }
 
+    categoriesItems.sort((p1, p2) => (p2.total_view > p1.total_view) ? 1 : (p2.total_view < p1.total_view) ? -1 : 0);
+
+
+
   categoriesItems.map((item, index) => {
     // console.log(item);
+
+    
     const div = document.createElement("div");
     div.classList.add("newsCard");
 
@@ -55,14 +63,14 @@ const displayCategoriesItems = (categoriesItems) => {
           </div>
           <div className="">
             <h5 class="title">${item.title}</h5>
-          <p class="des">${item.details.slice(0, 500) + "..."}</p>
+            <p class="des">${item.details.slice(0, 500) + "..."}</p>
           
           <div class="cartDesign  ">
          <div class ="d-flex align-items-center gap-2">
          <img class='profile d-inline' src="${item.author.img}" alt="...">
          <div class="d-inline">
          <p class="author-name">${item.author.name} </p>
-         <p class="date d-inline">${item.author.published_date.slice(0,10)}</p>
+         <p class="date d-inline">${item.author.published_date}</p>
 
          </div>
          </div>
@@ -142,7 +150,7 @@ const displaNewsDetails = (details) => {
          <img class='profile d-inline' src="${item.author.img}" alt="...">
          <div class="d-inline">
          <p class="author-name">${item.author.name} </p>
-         <p class="date d-inline">${item.author.published_date.slice(0,10)}</p>
+         <p class="date d-inline">${item.author?.published_date}</p>
 
          </div>
          </div>
