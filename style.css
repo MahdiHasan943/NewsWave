@@ -33,13 +33,101 @@ color: white;
     border-bottom: 0.8px solid #CDCDCD;
 }
 .navText{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+margin: 0 10px;
+/* identical to box height */
+
+
+color: #858585;
+}
+.item{
+    background-color:#ffffff;
+    
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+.trend{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 21px;
 /* identical to box height */
+border: 1px solid #5D5FEF;
+
+/* Iris/100 */
+padding: 7px 20px;
+color: #5D5FEF;
+transition: all 5sm;
+border-radius: 5px;
 
 
-color: #858585;
+
+}
+.pick{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    border: 1px solid #5D5FEF;
+    
+    /* Iris/100 */
+    padding: 7px;
+    color: white;
+    background: #5D5FEF;
+    transition: all 5sm;
+    border-radius: 5px;
+
+}
+.trend:hover{
+    background: #5D5FEF;
+    color: white;
+    transition-delay: 1sm;
+
+}
+.copy{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    
+    /* Black 20% */
+    
+    color: #949494;
+
+}
+.newsCard{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+.profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.cartDesign{
+   
+    display: flex;
+    width: 100%;
+    background: #000;
+    gap: 20px;
+}
+
+@media screen and (max-width:600px) {
+    
+    .newsCard{
+        margin: 10px;
+        display: block;
+       
+    }
+    
 }
