@@ -108,21 +108,80 @@ border-radius: 5px;
     margin: 10px;
     display: flex;
     gap: 20px;
+    justify-items: center;
 }
 .profile{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
 }
+
+.author-name{
+    color: var(--black, #2B2C34);
+    font-size: 16px;
+    font-family: Roboto;
+
+}
+
+.view{
+    color: #515151;
+font-size: 18px;
+font-family: Roboto;
+font-weight: 700;
+}
+
+.date{
+
+    color: var(--blacks-mid-emphasis, #718797);
+font-size: 14px;
+font-family: Poppins;
+text-transform: capitalize;
+margin-bottom: -40px;
+}
+
 .cartDesign{
    
     display: flex;
     width: 100%;
-    background: #000;
     gap: 20px;
+    justify-content: space-between;
+   align-items: center;
 }
 
-@media screen and (max-width:600px) {
+.title{
+    color: #121221;
+font-size: 24px;
+font-family: Roboto;
+font-weight: 700;
+line-height: 140%;
+}
+
+.div1{
+    width: 95%;
+    margin: auto;
+}
+.div{
+    width: 90%;
+    margin: auto;
+}
+.des{
+    color: #949494;
+font-size: 16px;
+font-family: Roboto;
+line-height: 26.4px;
+}
+.main-image{
+    width: 244px;
+flex-shrink: 0;
+align-self: stretch;
+}
+
+.arrow{
+    border-radius: 5px;
+color: var(--iris-100, #5D5FEF);
+}
+
+@media screen and  (max-width:1200px) {
     
     .newsCard{
         margin: 10px;
@@ -130,4 +189,22 @@ border-radius: 5px;
        
     }
     
+    .div{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .div1{
+        width: 100%;
+        margin: auto;
+    }
+
+    
+
+    .main-image{
+        width: 100%;
+
+        
+        margin-bottom: 10px;
+    }
 }
