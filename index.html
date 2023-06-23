@@ -19,8 +19,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse mx-2 lg:mx-0  flex  gap-4 justify-content-end  navbar-collapse" id="navbarSupportedContent">
-                 <a class="nav-link active" aria-current="page" href="#" >News</a>
-                 <a class="nav-link" href="#">Blog</a>
+                 <a class="nav-link active" aria-current="page" id="mostWatch" >News</a>
+                 <!-- <a class="nav-link" href="#">Blog</a> -->
                  <img class="img-fluid rounded-circle rounded-full pr" src="./img/pr.png" alt="">
            
           </div>
@@ -29,12 +29,11 @@
 
 
 
-            <div class="" id="loading"></div>
-
 
       <div class="container d-flex pt-4   flex-wrap justify-content-around m-0" id="categories">
           
 
+      
       </div>
       <div class="div1 px-4 pt-4 pb-2">
            <p class="item shadow-sm border-top border-light"><span id="item-found"> </span> items found for category <span id="item-name"></span></p>
@@ -46,12 +45,13 @@
       <div class="div1 d-flex align-items-center justify-content-between">
         <div class="">
           <div class="px-2 input-group  mx-auto ">
-            <label class="px-4 my-2 my-sm-0  py-2" for="inputGroupSelect01">Sort By View :</label>
-            <select class=" py-2 my-2 my-sm-0 px-3 ml-2 focus-border-0 bg-light border-0 shadow-sm" id="inputGroupSelect01">
-              <option  selected>Default...</option>
-              <option value="1">Most Watch </option>
-              <option value="2">Cricket</option>
-              <option value="3">Financial</option>
+            <input class="px-4 border-0 my-2 my-sm-0  py-2" type="button" onclick="sorting()" 
+            value="Sort By View">
+            <select name="" id="mySelect" class=" py-2 my-2 my-sm-0 px-3 ml-2 focus-border-0 bg-light border-0 shadow-sm" >
+              <option id="watch" value="Default">Default</option>
+              <option value="Most Watch">Most Watch</option>
+              <!-- <option value="2">Cricket</option>
+              <option value="3">Financial</option> -->
             </select>
           </div>
 
@@ -84,6 +84,11 @@
         </div>
       </div>
     <main class="div  px-2 pt-5">
+     <div  id="loading"  class="d-none w-full d-flex justify-content-center ">
+      <div class="mx-auto spinner-border text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+     </div>
     <div id="newsItems"  class="">
       
 

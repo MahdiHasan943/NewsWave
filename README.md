@@ -1,4 +1,4 @@
-live-site link : 
+live-site link : https://mahdihasan943.github.io/NewsWave/
 
 about newsWave :
 I have made this news website as my assignment purpose .

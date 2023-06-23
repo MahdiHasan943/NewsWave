@@ -3,10 +3,13 @@ const loadCategories = async () => {
     .then((res) => res.json())
     .then((data) => displayCategoreis(data.data.news_category))
     .catch((error) => console.log(error));
+    const loading = document.getElementById('loading')
+    loading.classList.remove('d-none')
 };
 const displayCategoreis = (category) => {
   const div = document.getElementById("categories");
-
+  const loading = document.getElementById('loading')
+  loading.classList.add('d-none')
   category.map((item, index) => {
     const a = document.createElement("div");
     a.classList.add("navText");
