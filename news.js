@@ -22,15 +22,17 @@ const displayCategoreis = (category) => {
   });
 };
 
+
+
 const loadCategorisItems = async (category) => {
   fetch(`https://openapi.programming-hero.com/api/news/category/${category}`)
     .then((res) => res.json())
     .then((data) => displayCategoriesItems(data.data))
     .catch((error) => console.log(error));
 };
+
 const displayCategoriesItems = (categoriesItems) => {
-
-
+   
   const newsItemsDiv = document.getElementById("newsItems");
   newsItemsDiv.innerHTML = "";
   const itemFound = document.getElementById("item-found");
@@ -38,9 +40,9 @@ const displayCategoriesItems = (categoriesItems) => {
     <span>${categoriesItems.length}</span>
    
     `;
-
-  if (categoriesItems.length === 0) {
     const error = document.getElementById("error");
+  error.innerText = '';
+  if (categoriesItems.length === 0) {
 
     error.innerText = `
           News are not available 
